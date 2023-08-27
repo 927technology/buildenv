@@ -6,9 +6,8 @@ FROM oraclelinux:9
 LABEL maintainer="cmurray@927.technology"
 
 #update os
-RUN yum check-update
+#RUN yum check-update
 RUN yum update -y
 
 #install development packages
 RUN yum groupinstall -y "Development Tools"
-
