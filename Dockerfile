@@ -10,5 +10,5 @@ RUN yum check-update
 RUN yum update -y
 
 #install development packages
-yum groupinstall -y "Development Tools"
+RUN yum groupinstall -y "Development Tools"
 
